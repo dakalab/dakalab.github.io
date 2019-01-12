@@ -2,22 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Dakalab</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="_media/favicon.ico">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'Dakalab',
-      repo: 'https://github.com/dakalab/',
-      coverpage: ['/', '/zh-cn/'],
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+      },
       auto2top: true,
+      coverpage: ['/', '/zh-cn/'],
+      ga: 'UA-132381350-1',
       loadNavbar: true,
       loadSidebar: true,
+      name: 'Dakalab',
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span>&copy; 2019 <a href="https://www.dakalab.com">dakalab.com</a></span>',
+            '</footer>'
+          ].join('')
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+        }
+      ],
+      repo: 'https://github.com/dakalab/',
       search: {
         noData: {
           '/zh-cn/': '没有结果!',
@@ -29,13 +47,25 @@
           '/': 'Search'
         }
       },
-      ga: 'UA-132381350-1'
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
   <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-dart.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-docker.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-go.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-makefile.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-protobuf.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-typescript.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
 </body>
 </html>
