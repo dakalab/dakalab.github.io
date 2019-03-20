@@ -1,1 +1,4 @@
-* [Home](/)
+- [Home](/)
+- Tech Notes
+  - Database
+    - [Enable MySQL Query Log](/notes/database/enable-query-log.md)

@@ -1,1 +1,4 @@
-* [首页](/)
+- [首页](/zh-cn/)
+- 技术拾忆
+  - 数据库
+    - [启用MySQL查询日志](/zh-cn/notes/database/enable-query-log.md)
