@@ -2,3 +2,5 @@
 - 技术拾忆
   - 数据库
     - [启用MySQL查询日志](/zh-cn/notes/database/enable-query-log.md)
+  - Linux
+    - [systemctl vs chkconfig](/zh-cn/notes/linux/systemctl-vs-chkconfig.md)
