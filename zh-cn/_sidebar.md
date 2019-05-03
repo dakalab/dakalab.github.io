@@ -1,5 +1,7 @@
 - [首页](/zh-cn/)
 - 技术拾忆
+  - DevOps
+    - [在 Ubuntu 安装 Kubernetes (k8s)](/zh-cn/notes/devops/install-k8s.md)
   - 数据库
     - [启用MySQL查询日志](/zh-cn/notes/database/enable-query-log.md)
   - Linux

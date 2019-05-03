@@ -1,5 +1,7 @@
 - [Home](/)
 - Tech Notes
+  - DevOps
+    - [Install Kubernetes (k8s) on Ubuntu](/notes/devops/install-k8s.md)
   - Database
     - [Enable MySQL Query Log](/notes/database/enable-query-log.md)
   - Linux
