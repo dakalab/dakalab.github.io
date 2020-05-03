@@ -1,6 +1,6 @@
-# Welcome to our website
+# Welcome to my website
 
-DakaLab is an organization focus on making tools for DevOps
+DakaLab is for DevOps study and research purpose.
 
 ## Credit
 
